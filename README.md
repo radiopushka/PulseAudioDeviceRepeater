@@ -5,4 +5,4 @@ allows you to playback one pulse audio device to another with no noticable laten
 
 
 
-you can use it with other alsa devices but you will have to modify the code.
+you can use it with other alsa devices but you might have to modify the code.
