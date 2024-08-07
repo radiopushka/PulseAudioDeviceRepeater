@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -z $1 ]; then
+	pactl unload-module module-null-sink
+	echo "specify name to load module"
+else
+	pacmd load-module module-null-sink sink_name=$1
+	pacmd update-sink-proplist $1 device.description=$1
+fi
